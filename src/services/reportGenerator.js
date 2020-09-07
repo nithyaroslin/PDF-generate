@@ -12,7 +12,18 @@ const generatePDF = (posts) => {
   const doc = new jsPDF();
 
   // define the columns we want and their titles
-  const tableColumn = ["User-ID", "ID", "Title", "Body"];
+  const tableColumn = [
+    "User-ID",
+    "ID",
+    "Title",
+    "Body",
+    "Col-5",
+    "Col-6",
+    "Col-7",
+    "Col-8",
+    "Col-9",
+    "Col-10",
+  ];
   // define an empty array of rows
   const tableRows = [];
 
@@ -23,6 +34,12 @@ const generatePDF = (posts) => {
       post.id,
       post.title,
       post.body,
+      "Column Five",
+      "Column Six",
+      "Column Seven",
+      "Column Eight",
+      "Column Nine",
+      "Column Ten",
       // called date-fns to format the date on the post
       //format(new Date(post.updated_at), "yyyy-MM-dd"),
     ];

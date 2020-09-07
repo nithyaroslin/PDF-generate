@@ -10,6 +10,12 @@ const PostsComponent = ({ posts }) => {
             <th scope="col">ID</th>
             <th scope="col">Title</th>
             <th scope="col">Body</th>
+            <th scope="col">Col-5</th>
+            <th scope="col">Col-6</th>
+            <th scope="col">Col-7</th>
+            <th scope="col">Col-8</th>
+            <th scope="col">Col-9</th>
+            <th scope="col">Col-10</th>
           </tr>
         </thead>
         <tbody>
@@ -19,6 +25,12 @@ const PostsComponent = ({ posts }) => {
               <td>{post.id}</td>
               <td>{post.title}</td>
               <td>{post.body}</td>
+              <td>Column Five</td>
+              <td>Column Six</td>
+              <td>Column Seven</td>
+              <td>Column Eight</td>
+              <td>Column Nine</td>
+              <td>Column Ten</td>
             </tr>
           ))}
         </tbody>

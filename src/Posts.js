@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import generatePDF from "./services/reportGenerator";
 import axios from "axios";
-import PostsComponent from "./PostsComponent";
+//import PostsComponent from "./PostsComponent";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -29,11 +29,11 @@ const Posts = () => {
             className="btn btn-primary"
             onClick={() => generatePDF(posts)}
           >
-            Generate monthly report
+            Generate PDF
           </button>
         </div>
       </div>
-      <PostsComponent posts={posts} />
+      {/* <PostsComponent posts={posts} /> */}
     </div>
   );
 };
