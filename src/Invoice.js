@@ -23,7 +23,8 @@ const Invoice = () => {
   return (
     <div>
       <div>
-        <div className="container mb-4 mt-4 p-3">
+        <div className="container mb-2 mt-2 p-2">
+          <p>PDF - hardcoded Invoice template</p>
           <button
             className="btn btn-primary"
             onClick={() => generateInvoice(invoice)}

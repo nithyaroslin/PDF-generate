@@ -24,7 +24,8 @@ const Posts = () => {
   return (
     <div>
       <div>
-        <div className="container mb-4 mt-4 p-3">
+        <div className="container mb-2 mt-2 p-2">
+          <p>Generate the report in a table</p>
           <button
             className="btn btn-primary"
             onClick={() => generatePDF(posts)}
